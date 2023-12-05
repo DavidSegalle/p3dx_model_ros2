@@ -1,0 +1,1 @@
+This program was first released by Rafael Berkvens and modified by Mario Serna Hernández under the GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007 as one can see in https://github.com/mario-serna/pioneer_p3dx_model. This program is a port for said program to work on ROS2
