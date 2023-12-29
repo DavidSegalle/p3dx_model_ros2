@@ -18,14 +18,13 @@ find_package(p3dx_description REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
-install(DIRECTORY include/
-  DESTINATION include)
+
  
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME})
 
 
-ament_export_include_directories(include)
+
 ament_export_dependencies(std_msgs)
 
 #target_include_directories(target PUBLIC include ${Boost_INCLUDE_DIRS})
