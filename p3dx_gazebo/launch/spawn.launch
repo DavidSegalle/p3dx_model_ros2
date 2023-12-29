@@ -12,19 +12,19 @@
     <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf 
                 -unpause
                 -urdf
-                -param /$(arg namespace_arg)/robot_description 
-                -model $(arg name)
-                -robot_namespace $(arg namespace_arg)
-                -x $(arg x) 
-                -y $(arg y) 
-                -z $(arg z)" />
+                -param /$(var namespace_arg)/robot_description 
+                -model $(var name)
+                -robot_namespace $(var namespace_arg)
+                -x $(var x) 
+                -y $(var y) 
+                -z $(var z)" />
 
     <include file="$(find p3dx_control)/launch/control.launch">
-            <arg name="name" value="$(arg namespace_arg)" />
-            <arg name="x" value="$(arg x)" />
-            <arg name="y" value="$(arg y)" />
-            <arg name="namespace_arg" value="$(arg namespace_arg)" />
-            <arg name="tfprefix" value="$(arg namespace_arg)_tf"/>
+            <arg name="name" value="$(var namespace_arg)" />
+            <arg name="x" value="$(var x)" />
+            <arg name="y" value="$(var y)" />
+            <arg name="namespace_arg" value="$(var namespace_arg)" />
+            <arg name="tfprefix" value="$(var namespace_arg)_tf"/>
         </include>
 
 </launch>
