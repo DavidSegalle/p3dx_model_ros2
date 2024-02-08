@@ -23,8 +23,8 @@ ament_target_dependencies(mover
 
 install(TARGETS mover
   DESTINATION lib/${PROJECT_NAME})
-install(DIRECTORY include/
-  DESTINATION include)
+#install(DIRECTORY include/
+#  DESTINATION include)
 install(DIRECTORY launch
 DESTINATION share/${PROJECT_NAME})
 

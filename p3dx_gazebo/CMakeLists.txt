@@ -18,8 +18,8 @@ find_package(p3dx_description REQUIRED)
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
-install(DIRECTORY include/
-  DESTINATION include)
+#install(DIRECTORY include/
+#  DESTINATION include)
 install(DIRECTORY launch
   DESTINATION share/${PROJECT_NAME})
 
