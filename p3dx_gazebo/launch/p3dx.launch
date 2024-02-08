@@ -7,14 +7,15 @@
     <arg name="z" default="0.0" />
 
     <!-- Spawn robot-->
-    <group ns="$(arg ns)">
-        <let name="tf_prefix" value="$(arg ns)_tf" />
-        <include file="$(find p3dx_gazebo)/launch/spawn.launch">
+    <group>
+    	<push_ros_namespace namespace="$(var ns)"/>
+        <param name="tf_prefix" value="$(var ns)_tf" />
+        <!--<include file="$(find p3dx_gazebo)/launch/spawn.launch">
             <arg name="name" value="$(arg ns)" />
             <arg name="x" value="$(arg x)" />
             <arg name="y" value="$(arg y)" />
             <arg name="z" value="$(arg z)" />
             <arg name="namespace_arg" value="$(arg ns)" />
-        </include>
+        </include>-->
     </group>
 </launch>
